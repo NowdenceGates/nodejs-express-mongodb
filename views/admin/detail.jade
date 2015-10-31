@@ -1,0 +1,26 @@
+extends ../layout
+
+block content
+	.container
+		ul.nav.nav-pills
+			li#a
+				a(href='/') 首页
+			li#a0
+				a(href='/admin') 后台首页
+			li#a1
+				a(href='/admin/list') 新闻列表
+			li#a2
+				a(href='/admin/bdnew') 添加新闻
+			
+	br
+	.container
+		.row
+			.col-md-12
+				dl.dl-horizontal
+					dt 新闻标题
+					dd= bdnew.newstitle
+					dt 新闻内容
+					dd= bdnew.newscontent
+					dt 新闻分类
+					dd= bdnew.newscat
+					

@@ -1,0 +1,195 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    font-family: arial;
+    vertical-align: baseline;
+}
+
+table{
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#wrapper{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	background-color: #fff
+}
+
+#index_view{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+}
+
+/*最上方的导航*/
+#index_view .toolbar{
+	background-image: url(../images/bg-news-logo.png);
+	background-repeat: no-repeat;
+	background-position: center 6px;
+	background-size: 77px auto;
+}
+
+.toolbar{
+	position: relative;
+	min-width: 320px;
+	height: 44px;
+	z-index: 2;
+	background-color: #3e98f0;
+	text-align: center;
+	font-weight: 400;
+	color: #fff;
+}
+
+.toolbar-l,.toolbar-r{
+	position: absolute;
+	height: 100%;
+	overflow: hidden;
+}
+
+.toolbar-l{
+	top: 0;
+	left: 0;
+}
+
+.toolbar-r{
+	top: 0;
+	right: 0;
+}
+
+.btn-search, .btn-subscribe, .btn-baidu, .btn-userhome {
+    border: 0;
+    background-image: url(../images/bg-new-toolbar.png);
+    background-size: 40px 500px;
+    -webkit-background-size: 40px 500px;
+    background-repeat: no-repeat;
+}
+
+.toolbar-l .toolbar-btn{
+	float: left;
+}
+
+.toolbar-r .toolbar-btn{
+	float: right;
+}
+
+.toolbar-btn{
+	width: 34px;
+	height: 100%;
+	font-size: 15px;
+	line-height: 44px;
+}
+
+.btn-baidu{
+	background-position: center 4px;
+}
+
+.btn-userhome{
+	background-position: center -463px;
+	margin-left: 10px;
+}
+
+.btn-search{
+	background-position: center -162px;
+	margin-right: 10px;
+}
+
+.btn-subscribe{
+	background-position: center -107px;
+}
+
+/*细致导航*/
+#index_view_navigator{
+	position: relative;
+	background-color: #3e98f0;
+	overflow: hidden;
+	z-index: 2;
+	color: #fff;
+}
+
+#index_view_navigator .divider{
+	height: 1px;
+	margin: 0 10px;
+	background-color: #5dabf0;
+}
+
+#index_view_navigator .content{
+	padding-top: 3px;
+	padding-bottom: 5px;
+}
+
+#index_view_navigator .content table{
+	width: 100%;
+	table-layout: fixed;
+}
+
+#index_view_navigator .content td{
+	height: 33px;
+	font-size: 16px;
+	line-height: 32px;
+	font-weight: 400;
+	text-align: center;
+}
+
+#index_view_navigator .content td>div{
+	position: relative;
+	height: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	-ms-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+}
+
+#index_view_navigator .content td b{
+	position: absolute;
+	top: 10px;
+	left: 0;
+	height: 12px;
+	width: 1px;
+	overflow-y:hidden;
+	background-color: #5dabf0; 
+}
+
+#index_view_navigator .content td span{
+	padding-bottom: 3px;
+	border-bottom: 2px solid transparent;
+}
+
+#index_view_navigator .content td span.cur {
+    border-bottom: 1px solid #fff;
+    margin: 0 2px;
+}
+/*carousel*/
+.carousel-inner>.item>a>img, .carousel-inner>.item>img{
+	margin:0 auto;
+	width:100%;
+}
+/*新闻内容*/
+#index_view_sections .list-item{
+	position: relative;
+	border-bottom: 1px solid #f6f6f6;
+	overflow: hidden;
+	padding: 10px 0;
+	margin: 0 10px;
+}
+
+.list-item .title{
+	font-size: 16px;
+	line-height: 20px;
+	color: #262b31;
+	margin: -1px 0 4px 0;
+}
+
+.list-item .main{
+	font-size: 13px;
+	line-height: 20px;
+	color: #b8bac0;
+	font-weight: 400;
+}

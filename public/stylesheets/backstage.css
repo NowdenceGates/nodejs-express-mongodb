@@ -1,0 +1,22 @@
+.container{
+	width:95%;
+    padding: 0;
+}
+
+.nav{
+    margin-bottom: 50px;
+}
+
+.tab{
+	width:95%;
+    margin: 0 auto;
+}
+
+.form{
+	width:95%;
+    margin: 0 auto;
+}
+
+.con_out{
+    display: none;
+}

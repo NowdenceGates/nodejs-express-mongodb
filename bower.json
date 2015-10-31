@@ -1,0 +1,26 @@
+{
+  "name": "bdnews",
+  "authors": [
+    "nowdencegates <18608686007@163.com>"
+  ],
+  "description": "baidu news for iphone mis",
+  "main": "app.js",
+  "moduleType": [],
+  "keywords": [
+    "bdnews"
+  ],
+  "license": "MIT",
+  "homepage": "app.js",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/libs",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

@@ -1,0 +1,22 @@
+extends ../layout
+
+block content
+	.container
+		ul.nav.nav-pills
+			li#a
+				a(href='/') 首页
+			li#a0.active
+				a(href='/admin') 后台首页
+			li#a1
+				a(href='/admin/list') 新闻列表
+			li#a2
+				a(href='/admin/bdnew') 添加新闻
+	br
+	.container
+		.row
+			each item in bdnews
+				.col-md-2
+					.thumbnail
+						.caption
+							h3 #{item.newstitle}
+							p: a.btn.btn-primary(href="/bdnew/#{item._id}", role="button") 请看

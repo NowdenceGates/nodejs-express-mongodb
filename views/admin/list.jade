@@ -1,0 +1,38 @@
+extends ../layout
+
+block content
+	.container
+		ul.nav.nav-pills
+			li#a
+				a(href='/') 首页
+			li#a0
+				a(href='/admin') 后台首页
+			li#a1.active
+				a(href='/admin/list') 新闻列表
+			li#a2
+				a(href='/admin/bdnew') 添加新闻
+	br
+	.container
+		.row
+			table.table.tale-hover.table-bordered
+				thead
+					tr
+						th 新闻标题
+						th 新闻内容
+						th 新闻分类
+						th 录入时间
+						th 查看
+						th 更新
+						th 删除
+				tbody
+					each item in bdnews
+						tr(class="item-id-#{item._id}")
+							td #{item.newstitle}
+							td #{item.newscontent}
+							td #{item.newscat}
+							td #{moment(item.meta.updateAt).format('MM/DD/YYYY')}
+							td: a(target="_blank", href="../bdnew/#{item._id}") 查看
+							td: a(target="_blank", href="../admin/update/#{item._id}") 修改
+							td
+								button.btn.btn-danger.del(type="button", data-id="#{item._id}") 删除
+	script(src="/js/admin.js")

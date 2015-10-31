@@ -1,0 +1,23 @@
+{
+  "name": "bdnews",
+  "version": "1.0.0",
+  "description": "baidunews",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.14.1",
+    "jade": "^1.11.0",
+    "mongoose": "^4.2.2",
+    "express": "^4.13.3",
+    "moment": "^2.10.6",
+    "underscore": "^1.8.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "baidunews"
+  ],
+  "author": "nowdencegates",
+  "license": "ISC"
+}

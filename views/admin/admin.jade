@@ -1,0 +1,40 @@
+extends ../layout
+
+block content
+	.container
+		ul.nav.nav-pills
+			li#a
+				a(href='/') 首页
+			li#a0
+				a(href='/admin') 后台首页
+			li#a1
+				a(href='/admin/list') 新闻列表
+			li#a2.active
+				a(href='/admin/bdnew') 添加新闻
+	br
+	.container
+		.row
+			form.form-horizontal(method="post", action="/admin/bdnew/new")
+				input(type="hidden" name="bdnew[_id]", value="#{bdnew._id}")
+				.form-group
+					label.col-sm-2.control-label(for="inputTitle") 新闻标题
+					.col-sm-10
+						input#inputTitle.form-control(type="text", name="bdnew[newstitle]", value="#{bdnew.newstitle}")
+				.form-group
+					label.col-sm-2.control-label(for="inputNewscontent") 新闻内容
+					.col-sm-10
+						textarea#inputNewscontent.form-control(type="text", name="bdnew[newscontent]", value="#{bdnew.newscontent}")
+				.form-group
+					label.col-sm-2.control-label(for="inputNewscat") 新闻分类
+					.col-sm-10
+						input#inputNewscat.form-control(type="text", name="bdnew[newscat]", value="#{bdnew.newscat}")
+				.form-group
+					.col-sm-offset-2.col-sm-10
+						button.btn.btn-primary(type="submit") 录入
+
+
+
+
+
+
+
